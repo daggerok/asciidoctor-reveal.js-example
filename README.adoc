@@ -1,0 +1,51 @@
+= Title
+
+_Getting started with example_
+
+[source,bash]
+----
+cd /tmp/
+git clone https://github.com/daggerok/asciidoctor-reveal.js-example
+cd reveal-md-example/
+
+npm i ; npm run serve
+----
+
+open http://127.0.0.1:5000/
+
+== Slide 1
+
+[%step]
+* this
+* is
+* revealed
+* ...
+
+== Slide two
+
+_Lists_
+
+* Point 1
+* Point 2
+
+---
+
+== Third slide
+
+[.notes]
+--
+* tell anecdote
+* make a point
+--
+
+> Best quote ever.
+
+Note: speaker notes FTW!
+
+== 4th slide
+
+yeap
+
+== resources
+
+link:https://github.com/asciidoctor/asciidoctor-reveal.js[nice and helpful tool]

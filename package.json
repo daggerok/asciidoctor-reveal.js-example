@@ -1,0 +1,44 @@
+{
+  "name": "asciidoctor-reveal.js-example",
+  "version": "1.0.0",
+  "description": "Asciidoctor reveal.js slides example",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "npm-run-all prebuild:*",
+    "prebuild:clean": "rimraf -rf dist",
+    "build": "node index.js",
+    "postbuild": "npm-run-all postbuild:*",
+    "postbuild:mkdirp": "mkdirp ./dist/node_modules/reveal.js",
+    "postbuild:mv": "mv index.html ./dist/index.html",
+    "postbuild:404": "ncp ./dist/index.html ./dist/404.html",
+    "postbuild:ncp": "ncp node_modules/reveal.js ./dist/node_modules/reveal.js",
+    "preserve": "npm run build",
+    "serve": "serve dist"
+  },
+  "keywords": [
+    "reveal",
+    "ad",
+    "adoc",
+    "asciidoc",
+    "asciidoctor",
+    "asciidoctor.js",
+    "asciidoctor-reveal.js",
+    "slides"
+  ],
+  "author": "Maksim Kostromin https://gituhb.com/daggerok/",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "11.11.3",
+    "asciidoctor-reveal.js": "2.0.0",
+    "asciidoctor.js": "1.5.9",
+    "mkdirp": "0.5.1",
+    "mv": "2.1.1",
+    "ncp": "2.0.0",
+    "npm-run-all": "4.1.5",
+    "rimraf": "2.6.3",
+    "serve": "10.1.2"
+  },
+  "dependencies": {
+    "reveal.js": "3.7.0"
+  }
+}
