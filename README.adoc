@@ -1,4 +1,4 @@
-= Title
+= Title image:https://travis-ci.org/daggerok/asciidoctor-reveal.js-example.svg?branch=master["Build Status", link="https://travis-ci.org/daggerok/asciidoctor-reveal.js-example"]
 
 _Getting started with example_
 
@@ -48,4 +48,4 @@ yeap
 
 == resources
 
-link:https://github.com/asciidoctor/asciidoctor-reveal.js[nice and helpful tool]
+- link:https://github.com/asciidoctor/asciidoctor-reveal.js[nice and helpful tool]

@@ -1,0 +1,24 @@
+env:
+  global:
+    secure: didogFnURih0d40JqPWFCzCGlHrAymp9J8qHaJUiihsrP3ZeyUW6YmN5FxoU+RhNn+/qzSS6yeRIfsO+dTbPfaOnQvHwnxNO5RbKiq+8tfycIFKCSRRmDaFedOV4q3VU2WlHJv31DLnHgXGQDq8c+S1zbPl74jLW++midhBOfGt9Gcc3Ht8Pt9ViR3Yi/nrFwXiCsL4dKq7bLLpXxVWmu3BK6rxTfvPfNiTcmmM697lXUY84dkNAaxQgmXBFcEHbZEvQUfzlso3rBxlYnUmXwTBwGmCVgSOQtyQ6r7Uyp/Hwp5h1i7b4I42A7FWLiVvuvXv3+X77Z+oqnxSjQfX7+J7M1tPkXAWu2VYZbe0xUT/eBurQ4FcoYGsyNTb+mQWmdMjLkPAd1pwyCC4YYNlCrOqf3a6Syd+jAulV2PHzjKYiVSg3PhS+gBPwojgY09DlSeNju8uO+GU0dhzbh8JchSNiWx0VAg+dbXoJCjapeKIuEE0hh8MHQMwx8df/RY+U9bRMiEhiYFJEF03BQlZV3Dh+JMEq1uH77WsHwf5REihp8B+Wx9iMV7wQuFJSlSb8LnfN6s8Wm5T/vXMQWHiA0UaBBqnofSYZhjz4xYM3zEmdeKZjK3vjzox2AC0/76x9l4M04IUUJ/qkLbcYUaI9fScrlLZAj+lba0KfVHrNy7k=
+language: node_js
+node_js: lts/*
+install: true
+script:
+  - echo hello\ world
+before_deploy:
+  - npm i ; npm run build
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: "$GITHUB_TOKEN"
+  keep-history: true
+  on:
+    branch: master
+  local-dir: dist
+  target_branch: gh-pages
+cache:
+  packages: true
+  npm: true
+  directories:
+    - "~/.npm"
