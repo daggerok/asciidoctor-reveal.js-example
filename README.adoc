@@ -6,7 +6,7 @@ _Getting started with example_
 ----
 cd /tmp/
 git clone https://github.com/daggerok/asciidoctor-reveal.js-example
-cd reveal-md-example/
+cd asciidoctor-reveal.js-example/
 
 npm i ; npm run serve
 ----
