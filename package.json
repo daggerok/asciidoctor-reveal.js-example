@@ -7,6 +7,7 @@
     "baseHref": "cross-env BASE_HREF=true npm run build",
     "prebuild": "npm-run-all prebuild:*",
     "prebuild:clean": "rimraf -rf dist",
+    "github-pages": "cross-env BASE_HREF='/asciidoctor-reveal.js-example/' npm run build",
     "build": "node index.js",
     "postbuild": "npm-run-all postbuild:*",
     "postbuild:mkdirp": "mkdirp ./dist/node_modules/reveal.js",
@@ -34,12 +35,12 @@
     "asciidoctor-reveal.js": "2.0.0",
     "asciidoctor.js": "1.5.9",
     "cross-env": "5.2.0",
-    "mkdirp": "0.5.1",
+    "mkdirp": "0.5.5",
     "mv": "2.1.1",
     "ncp": "2.0.0",
     "npm-run-all": "4.1.5",
     "rimraf": "2.6.3",
-    "serve": "10.1.2",
+    "serve": "11.3.2",
     "touch-cli": "0.0.1"
   },
   "dependencies": {

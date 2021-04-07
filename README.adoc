@@ -1,4 +1,4 @@
-= Title image:https://travis-ci.org/daggerok/asciidoctor-reveal.js-example.svg?branch=master["Build Status", link="https://travis-ci.org/daggerok/asciidoctor-reveal.js-example"]
+= Title image:https://github.com/daggerok/asciidoctor-reveal.js-example/actions/workflows/github-pages.yaml/badge.svg["Build Status", link="https://github.com/daggerok/asciidoctor-reveal.js-example/actions/workflows/github-pages.yaml"]
 
 _Getting started with example_
 

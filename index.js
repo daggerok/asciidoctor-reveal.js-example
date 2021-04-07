@@ -2,7 +2,7 @@
 var asciidoctor = require('asciidoctor.js')();
 require('asciidoctor-reveal.js').register();
 // use cross-env to setup <base href="...." />
-var baseHref = '/asciidoctor-reveal.js-example/';
+var baseHref = process.env.BASE_HREF || '/';
 var attributes = !process.env.BASE_HREF ? {} : { revealjsdir: baseHref + 'node_modules/reveal.js' };
 // Convert the document 'README.adoc' using the reveal.js converter
 asciidoctor.convertFile('README.adoc', {
