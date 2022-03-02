@@ -44,6 +44,6 @@
     "touch-cli": "0.0.1"
   },
   "dependencies": {
-    "reveal.js": "3.9.2"
+    "reveal.js": "4.3.0"
   }
 }
